@@ -1,0 +1,188 @@
+summon falling_block ~ ~1 ~ {Time: 1,BlockState: {Name:redstone_block
+    },Passengers: [
+        {id:armor_stand,Health: 0,Passengers: [
+                {id:falling_block,Time: 1,BlockState: {Name:activator_rail
+                    },Passengers: [
+                        {id:command_block_minecart,Command:'gamerule commandBlockOutput false'
+                        },
+                        {id:command_block_minecart,Command:'data merge block ~ ~-2 ~ {auto: 0
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'fill ~-3 ~-2 ~1 ~3 ~1 ~9 air'
+                        },
+                        {id:command_block_minecart,Command:'fill ~-2 ~-3 ~4 ~2 ~1 ~8 white_concrete outline'
+                        },
+                        {id:command_block_minecart,Command:'fill ~-2 ~-2 ~4 ~2 ~ ~8 barrier outline'
+                        },
+                        {id:command_block_minecart,Command:'fill ~-1 ~-3 ~5 ~1 ~1 ~7 birch_planks outline'
+                        },
+                        {id:command_block_minecart,Command:'fill ~-1 ~-2 ~5 ~1 ~ ~7 air'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~-2 ~5 repeating_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~-2 ~5 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~-2 ~5 chain_command_block[facing=south
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~-2 ~6 chain_command_block[facing=west
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~-2 ~6 chain_command_block[facing=west
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~-2 ~6 chain_command_block[facing=south
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~-2 ~7 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~-2 ~7 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~-2 ~7 chain_command_block[facing=up
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~-1 ~7 chain_command_block[facing=west
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~-1 ~7 chain_command_block[facing=west
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~-1 ~7 chain_command_block[facing=north
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~-1 ~6 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~-1 ~6 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~-1 ~6 chain_command_block[facing=north
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~-1 ~5 chain_command_block[facing=west
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~-1 ~5 chain_command_block[facing=west
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~-1 ~5 chain_command_block[facing=up
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~ ~5 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~ ~5 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~ ~5 chain_command_block[facing=south
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~ ~6 chain_command_block[facing=west
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~ ~6 chain_command_block[facing=west
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~ ~6 chain_command_block[facing=south
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~-1 ~ ~7 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~ ~7 chain_command_block[facing=east
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~1 ~ ~7 chain_command_block[facing=up
+                            ]{auto: 1,Command: ""
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'tellraw @a [
+                                "",
+                                {
+                                    "text": "Cool, eh?\\n",
+                                    "bold": true,
+                                    "color": "red"
+                                },
+                                {
+                                    "text": "Command Length: ",
+                                    "color": "aqua"
+                                },
+                                {
+                                    "text": "???",
+                                    "bold": true,
+                                    "color": "dark_aqua"
+                                },
+                                {
+                                    "text": " Release: ",
+                                    "color": "aqua"
+                                },
+                                {
+                                    "text": "v1.0\\n",
+                                    "bold": true,
+                                    "color": "dark_aqua"
+                                },
+                                {
+                                    "text": "Created By ",
+                                    "color": "aqua"
+                                },
+                                {
+                                    "text": "Brad",
+                                    "bold": true,
+                                    "color": "dark_aqua"
+                                }
+                            ]'
+                        },
+                        {id:command_block_minecart,Command:'title @a title {
+                                "text": "Cool, eh?",
+                                "bold": true,
+                                "color": "red"
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'title @a subtitle {
+                                "text": "By Brad",
+                                "bold": true,
+                                "color": "gold"
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'setblock ~ ~1 ~ command_block{auto: 1,Command: "fill ~ ~ ~ ~ ~-2 ~ air"
+                            }'
+                        },
+                        {id:command_block_minecart,Command:'kill @e[type=command_block_minecart,distance=..1
+                            ]'
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
